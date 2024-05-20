@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient {
+  background: #0d0b33;
+  background-image: radial-gradient(
+      at 98.2% 96.1%,
+      #4c2f6f 0px,
+      transparent 15% /* Reduced from 30% */
+    ),
+    radial-gradient(
+      at 44.7% 96.8%,
+      #c266a7 0px,
+      transparent 25% /* Reduced from 50% */
+    ),
+    radial-gradient(
+      at 79.9% 97.9%,
+      #e7c8e7 0px,
+      transparent 25% /* Reduced from 50% */
+    ),
+    radial-gradient(
+      at 2.9% 97.5%,
+      #52489f 0px,
+      transparent 25% /* Reduced from 50% */
+    );
+}
+
+.button {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button a,
+.button span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #6d2e4c80;
+  background: #61284480;
+  border-top: 2px solid rgba(112, 111, 111, 0.74);
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  color: #fff;
+  font-weight: 400px;
+  z-index: 1;
+  transition: 0.5s;
+  backdrop-filter: blur(15px);
+}
+.button:hover a,
+.button:hover span {
+  transform: scale(1.05);
+  background: #79335580;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.dashboard-page {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+@media (min-width: 992px) {
+  .dashboard {
+    grid-template-columns: auto 1fr;
+  }
+  .dashboard-page {
+    width: 90%;
+  }
+}
+
+.black {
+  background-color: #131212;
+}
+
+.chat {
+  background-color: rgb(85, 81, 81);
+}
+
+/* Scrollbar */
+html {
+  scrollbar-width: none;
+  scrollbar-color: #333 #777;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
