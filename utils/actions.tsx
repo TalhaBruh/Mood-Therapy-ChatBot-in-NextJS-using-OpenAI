@@ -12,7 +12,7 @@ import {
   sessionRatingType,
 } from "./types";
 
-// Open AI API
+// OpenAI API
 const openai = new openAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
