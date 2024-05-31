@@ -211,3 +211,4 @@ export const sessionRatingAction = async (
 export const logoutAction = () => {
   deleteSession();
 };
+
