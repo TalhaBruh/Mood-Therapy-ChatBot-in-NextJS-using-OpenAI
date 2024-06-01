@@ -196,7 +196,7 @@ export const sessionRatingAction = async (
     console.log(values);
     console.log(session);
 
-    // Converting the Mongoose document into a simple object
+    // Converting the Mongoose document into object
     const simpleSession = session.toObject({ getters: true, virtuals: false });
     delete simpleSession.__v;
     delete simpleSession._id;
