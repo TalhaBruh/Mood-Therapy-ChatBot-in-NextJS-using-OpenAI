@@ -6,7 +6,7 @@ type MoodType = {
 const moods: MoodType[] = [
   {
     id: 1,
-    mood: "angry",
+    mood: "Angry",
   },
   {
     id: 2,
