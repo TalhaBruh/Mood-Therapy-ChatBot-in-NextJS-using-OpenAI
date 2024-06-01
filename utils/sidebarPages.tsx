@@ -17,7 +17,7 @@ export const sidebarPages: SidebarPagesType[] = [
   {
     id: 2,
     icon: <Timer />,
-    title: "Session Length",
+    title: "Session Time",
     href: "/dashboard/session-length",
   },
   {
