@@ -51,7 +51,7 @@ export const createSession = async (
   });
 };
 
-// Updating the session
+// Updating the Session
 export const updateSession = async () => {
   const session = cookies().get("session")?.value;
   const payload = await decrypt(session);
