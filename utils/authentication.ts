@@ -70,7 +70,7 @@ export const updateSession = async () => {
   });
 };
 
-// Deleting the session
+// Deleting the Session
 export const deleteSession = () => {
   cookies().delete("session");
 };
