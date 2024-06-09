@@ -21,7 +21,7 @@ export const encrypt = async (payload: SessionPayload) => {
     .sign(encodedKey);
 };
 
-// Decrypting the session
+// Decrypting the Session
 export const decrypt = async (session: string | undefined = "") => {
   try {
     const { payload } = await jwtVerify(session, encodedKey, {
