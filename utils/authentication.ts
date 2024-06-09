@@ -33,7 +33,7 @@ export const decrypt = async (session: string | undefined = "") => {
   }
 };
 
-// Creating the session
+// Creating the Session
 export const createSession = async (
   userName: string,
   mood: string,
