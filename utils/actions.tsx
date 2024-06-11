@@ -177,7 +177,7 @@ export const sessionRatingAction = async (
     // Connecting to the DB
     await connectDB();
 
-    // Finding the user with given userName
+    // Finding the user with given UserName
     const user = await User.findOne({ userName: values.userName });
     if (!user) {
       return { error: "No user with this user name!!!" };
