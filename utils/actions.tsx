@@ -143,7 +143,7 @@ export const updateUserAction = async (
     // Connecting to the DB
     await connectDB();
 
-    // Finding the Specific User & Updating the Mood & Session values
+    // Finding the Specific User & Updating the Mood & Session Values
     const user = await User.findOneAndUpdate(
       { userName: values.userName },
       {
