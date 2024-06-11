@@ -183,7 +183,7 @@ export const sessionRatingAction = async (
       return { error: "No user with this user name!!!" };
     }
 
-    // Creating session rating
+    // Creating Session rating
     const session = await Session.create({
       rating: values.rating,
       review: values.review,
