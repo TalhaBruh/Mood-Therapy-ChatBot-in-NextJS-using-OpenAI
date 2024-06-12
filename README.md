@@ -6,13 +6,6 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
 ![Screenshot 2024-05-24 174744](https://github.com/TalhaBruh/Mood-Therapy-ChatBot-NextJS-using-GPT3.5/assets/79919912/6a4b789b-b447-4e85-9227-ec7657343f67)
 
