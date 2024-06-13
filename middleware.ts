@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { decrypt } from "@/utils/authentication";
 import { cookies } from "next/headers";
 
-// 1. Specify Protected & Public routes
+// 1. Specify Protected & Public Routes
 const protectedRoutes = ["/dashboard"];
 const publicRoutes = ["/login", "/register", "/mood", "/session"];
 
