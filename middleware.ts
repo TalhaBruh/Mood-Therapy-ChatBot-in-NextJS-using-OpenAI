@@ -7,7 +7,7 @@ const protectedRoutes = ["/dashboard"];
 const publicRoutes = ["/login", "/register", "/mood", "/session"];
 
 const middleware = async (req: NextRequest) => {
-  // 2. Check if the current Route is protected or public
+  // 2. Check if the current Route is protected or Public
   const path = req.nextUrl.pathname;
   const isProtectedRoute = protectedRoutes.includes(path);
   const isPublicRoute = publicRoutes.includes(path);
