@@ -12,7 +12,7 @@ const middleware = async (req: NextRequest) => {
   const isProtectedRoute = protectedRoutes.includes(path);
   const isPublicRoute = publicRoutes.includes(path);
 
-  // 3. Decrypt the session from the cookie
+  // 3. Decrypt the Session from the cookie
   const cookie = cookies().get("session")?.value;
   const sessionValues = await decrypt(cookie);
 
